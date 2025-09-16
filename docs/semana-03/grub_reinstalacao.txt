@@ -1,0 +1,25 @@
+------- Comandos -------
+
+sudo grub-install /dev/sda 2>&1
+sudo update-grub 2>&1
+
+------------------------
+
+Resultado primeiro comando
+
+Instalando para a plataforma i386-pc.
+Instalação finalizada. Nenhum erro foi relatado.
+
+
+
+Resultado segundo comando
+
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/50_linuxmint.cfg'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-5.15.0-91-generic
+Found initrd image: /boot/initrd.img-5.15.0-91-generic
+Warning: os-prober will be executed to detect other bootable partitions.
+Its output will be used to detect bootable binaries on them and create new boot entries.
+done
