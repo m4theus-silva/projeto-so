@@ -1,0 +1,14 @@
+Comandos utilizados:
+
+diskpart
+list volume
+
+Resultado:
+
+  Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+  Volume 0     D                       CD-ROM          0 B  No Media
+  Volume 1                      NTFS   Partition    100 MB  Healthy    System
+  Volume 2     C                NTFS   Partition     37 GB  Healthy    Boot
+  Volume 3     E   teste        NTFS   Partition   2048 MB  Healthy
+  Volume 4                      NTFS   Partition    674 MB  Healthy    Hidden

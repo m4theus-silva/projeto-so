@@ -1,0 +1,180 @@
+-------------- Comandos Utilizados ---------------
+
+Get-WinEvent -LogName System -MaxEvents 20 | Format-List 
+Get-CimInstance Win32_Processor | Format-List Name,NumberOfCores,NumberOfLogicalProcessors 
+Get-CimInstance Win32_PhysicalMemory | Format-Table Manufacturer,Capacity,Speed 
+Get-CimInstance Win32_DiskDrive | Format-Table Model,Size,InterfaceType 
+Get-NetAdapter | Format-Table Name,InterfaceDescription,Status,MacAddress 
+Get-WinEvent -FilterHashtable @{LogName='System'; Level=2} -MaxEvents 20 | Format-List   # Level=2 = Error 
+Get-WinEvent -FilterHashtable @{LogName='System'; Level=3} -MaxEvents 20 | Format-List   # Level=3 = Warning 
+
+-------------------
+Get-WinEvent -LogName System -MaxEvents 20 | Format-List 
+
+TimeCreated  : 9/16/2025 11:57:32 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The Software Protection service entered the stopped state.
+
+TimeCreated  : 9/16/2025 11:57:01 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The Software Protection service entered the running state.
+
+TimeCreated  : 9/16/2025 11:57:01 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The AppX Deployment Service (AppXSVC) service entered the running state.
+
+TimeCreated  : 9/16/2025 11:57:01 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The CloudBackupRestoreSvc_5ff09 service entered the running state.
+
+TimeCreated  : 9/16/2025 11:55:17 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The Microsoft Account Sign-in Assistant service entered the running state.
+
+TimeCreated  : 9/16/2025 11:49:52 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The Software Protection service entered the stopped state.
+
+TimeCreated  : 9/16/2025 11:49:22 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The Software Protection service entered the running state.
+
+TimeCreated  : 9/16/2025 11:48:25 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The Microsoft Account Sign-in Assistant service entered the stopped state.
+
+TimeCreated  : 9/16/2025 11:43:55 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The Microsoft Account Sign-in Assistant service entered the running state.
+
+TimeCreated  : 9/16/2025 11:43:23 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The Microsoft Storage Spaces SMP service entered the stopped state.
+
+TimeCreated  : 9/16/2025 11:34:06 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The Microsoft Account Sign-in Assistant service entered the stopped state.
+
+TimeCreated  : 9/16/2025 11:33:42 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The Windows Update service entered the stopped state.
+
+TimeCreated  : 9/16/2025 11:27:31 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The Software Protection service entered the stopped state.
+
+TimeCreated  : 9/16/2025 11:27:01 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The Software Protection service entered the running state.
+
+TimeCreated  : 9/16/2025 11:25:23 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The Microsoft Storage Spaces SMP service entered the running state.
+
+TimeCreated  : 9/16/2025 11:25:07 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The Microsoft Account Sign-in Assistant service entered the running state.
+
+TimeCreated  : 9/16/2025 11:23:48 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The Windows Modules Installer service entered the stopped state.
+
+TimeCreated  : 9/16/2025 11:21:47 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The Windows Modules Installer service entered the running state.
+
+TimeCreated  : 9/16/2025 11:17:07 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The Delivery Optimization service entered the stopped state.
+
+TimeCreated  : 9/16/2025 11:15:35 AM
+ProviderName : Service Control Manager
+Id           : 7036
+Message      : The AppX Deployment Service (AppXSVC) service entered the stopped state.
+
+--------- Proximos Comandos ----------- 
+Get-CimInstance Win32_Processor | Format-List Name,NumberOfCores,NumberOfLogicalProcessors 
+Get-CimInstance Win32_DiskDrive | Format-Table Model,Size,InterfaceType 
+
+
+Name                      : AMD Ryzen 5 5600G with Radeon Graphics         
+NumberOfCores             : 2
+NumberOfLogicalProcessors : 2
+
+
+Model                Size InterfaceType
+-----                ---- -------------
+VBOX HARDDISK 42944186880 IDE          
+
+
+---------- Proximos Comandos ------------
+Get-NetAdapter | Format-Table Name,InterfaceDescription,Status,MacAddress 
+
+
+Name       InterfaceDescription                    Status MacAddress       
+----       --------------------                    ------ ----------       
+Ethernet 2 Intel(R) PRO/1000 MT Desktop Adapter #2 Up     08-00-27-D6-19-4A
+
+
+---------- Proximos Comandos ------------
+Get-WinEvent -FilterHashtable @{LogName='System'; Level=2} -MaxEvents 20 | Format-List   # Level=2 = Error 
+Get-WinEvent -FilterHashtable @{LogName='System'; Level=3} -MaxEvents 20 | Format-List   # Level=3 = Warning 
+
+TimeCreated  : 9/10/2025 11:38:49 AM
+ProviderName : EventLog
+Id           : 6008
+Message      : The previous system shutdown at 7:10:28 AM on ‎9/‎10/‎2025 was unexpected.
+
+TimeCreated  : 9/10/2025 7:05:58 AM
+ProviderName : Service Control Manager
+Id           : 7030
+Message      : The Printer Extensions and Notifications service is marked as an interactive service.  However, the
+               system is configured to not allow interactive services.  This service may not function properly.
+
+TimeCreated  : 9/10/2025 11:03:36 AM
+ProviderName : Service Control Manager
+Id           : 7023
+Message      : The netprofm service terminated with the following error:
+               The device is not ready.
+
+
+
+TimeCreated  : 9/16/2025 9:07:33 AM
+ProviderName : Microsoft-Windows-WinRM
+Id           : 10149
+Message      : The WinRM service is not listening for WS-Management requests.
+
+                User Action
+                If you did not intentionally stop the service, use the following command to see the WinRM
+               configuration:
+
+                winrm enumerate winrm/config/listener
+
+TimeCreated  : 9/16/2025 8:53:22 AM
+ProviderName : Microsoft-Windows-Time-Service
+Id           : 134
+Message      : NtpClient was unable to set a manual peer to use as a time source because of DNS resolution error on
+               'time.windows.com,0x8'. NtpClient will try again in 15 minutes and double the reattempt interval
+               thereafter. The error was: The requested name is valid, but no data of the requested type was found.
+               (0x80072AFC)
+
+---------------------
