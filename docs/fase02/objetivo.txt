@@ -1,0 +1,1 @@
+Nesta fase, vamos trabalhar com o bootstrapping e gerenciar as partições do disco

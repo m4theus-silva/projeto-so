@@ -1,0 +1,1 @@
+Nesta fase, vamos realizar a configuração básica do Firewall de cada sistema.
